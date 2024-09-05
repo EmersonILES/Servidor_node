@@ -4,8 +4,8 @@ const server = http.createServer((req, res) => {
   if (req.url === '/') {
     res.statusCode = 200;
     
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Esta es la página principal');
+    res.setHeader('Content-Type', 'text/json');
+    res.end('Esta es la página  principal  en texto json');
   } else if (req.url === '/text') {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
